@@ -1,0 +1,11 @@
+# Never ship local virtualenv, caches, vector store, or secrets into the image.
+.venv/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.chroma/
+.env.local
+.env
+tests/
+*.md
+docs/

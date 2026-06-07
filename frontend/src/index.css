@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  :root {
+    --background: 0 0% 2%; /* #050505 */
+    --foreground: 40 29% 94%; /* #F5F2ED */
+    
+    --card: 0 0% 9%; /* #161616 */
+    --card-foreground: 40 29% 94%;
+    
+    --popover: 0 0% 5%; /* #0E0E0E */
+    --popover-foreground: 40 29% 94%;
+    
+    --primary: 35 24% 63%; /* #B8A58A - Warm Stone */
+    --primary-foreground: 0 0% 2%;
+    
+    --secondary: 0 0% 9%; /* #161616 */
+    --secondary-foreground: 35 24% 63%;
+    
+    --muted: 0 0% 5%; /* #0E0E0E */
+    --muted-foreground: 0 0% 48%; /* #7A7A7A - Reflection Gray */
+    
+    --accent: 37 36% 74%; /* #D6C3A5 - Muted Gold */
+    --accent-foreground: 0 0% 2%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 9%;
+    --input: 0 0% 9%;
+    --ring: 35 24% 63%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    border-color: #161616;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+/* Tsumiki Global Zen Typography Classes */
+.heading-hero {
+  font-size: clamp(4rem, 10vw, 9rem);
+  line-height: 0.9;
+  letter-spacing: 0.28em;
+  font-weight: 250;
+  text-transform: uppercase;
+}
+
+.heading-section {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.body-minimal {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #B8B8B8;
+  max-width: 620px;
+}
+
+/* Zen Layout and Rhythm */
+.zen-section {
+  padding-top: 180px;
+  padding-bottom: 180px;
+  max-width: 1440px;
+  padding-inline: 6vw;
+  margin: 0 auto;
+}
+
+/* Smooth motion for Zen interactions */
+.zen-transition {
+  transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
