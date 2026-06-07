@@ -1,0 +1,17 @@
+# Tsumiki backend — pinned dependencies (Python 3.11+)
+# Agent graph
+langgraph==0.2.62
+langchain==0.3.14
+langchain-ollama==0.2.2
+# Config / env
+python-dotenv==1.0.1
+pydantic==2.10.4
+pydantic-settings==2.7.1
+# Memory backends
+supabase==2.11.0
+chromadb==0.6.3
+# API
+fastapi==0.115.6
+uvicorn==0.34.0
+# Tests
+pytest==8.3.4
